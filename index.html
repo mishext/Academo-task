@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        
+     <img src="images/Academo_logo.png" class="logo">
+    <nav>
+        <input type="checkbox" id="check">
+     <label for="check" class="checkbtn">
+       <i class="fa fa-bars"></i> 
+     </label>
+     <ul class="menu">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Vision</a></li>
+         <li><a href="#">Contact Us</a></li>
+        <a href="#"><i class="far fa-search"></i></a>
+     </ul>
+    </nav>
+
+</div>
+
+    <main>
+        <div class="first-bg">
+         <a href="#forms">  <i class="far fa-angle-down scroll-icon" ></i></a> 
+        </div>
+
+
+        <div class="second-bg" id="forms">
+
+           <div class="forms-container">
+
+             <div class="form-container">
+                <h1>TIME IN</h1>
+                <p>Attendance login</p>
+                <p class="required">*Reqiured</p>
+             </div>
+                
+            <div class="form-container2">
+                <form class="first-form" method="get" id="form1">
+                    <label for="fname">Name <span class="star">*</span></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Your Answer"><br>
+                  </form> 
+                </div>
+
+            <div class="form-container2">
+                <form class="first-form" method="get" id="form1">
+                    <label for="fname">Time In <span class="star">*</span></label><br>
+                    <input type="time" id="appt" name="appt" ><br>
+                   
+                  </form> 
+            </div>
+            <input type="submit" value="Submit" class="submit" form="form1" />
+        </div>
+
+
+        <div class="forms-container">
+
+            <div class="form-container form-border-top">
+               <h1>TIME IN</h1>
+               <p>Attendance login</p>
+               <p class="required">*Reqiured</p>
+            </div>
+               
+           <div class="form-container2">
+               <form class="first-form" method="get" id="form2">
+                   <label for="fname">Name <span class="star">*</span></label><br>
+                   <input type="text" id="fname" name="fname" placeholder="Your Answer"><br>
+                 </form> 
+               </div>
+
+           <div class="form-container2">
+               <form class="first-form" method="get" id="form2">
+                   <label for="fname">Time In <span class="star">*</span></label><br>
+                   <input type="time" id="appt" name="appt" ><br>
+                  
+                 </form> 
+           </div>
+           <input type="submit" value="Submit" class="submit submit-color" form="form2" />
+       </div>
+
+       
+        </div>
+    </main>
+    
+    <footer class="footer">
+       <p>&copy; 2021 Academo Inc. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

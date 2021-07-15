@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+.container{
+    width: 100%;
+    line-height: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.checkbtn{
+    font-size: 20px;
+    display:none;
+    line-height: 40px;
+    position: absolute;
+    padding-right: 30px;
+    right: 0;
+    color: black;
+}
+.checkbtn:hover{
+    color: green;
+}
+#check{
+    display: none;
+}
+
+.logo{
+    margin-left:20px ;
+    height: 40px;
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    margin-right: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+ nav ul li a{
+margin-left: 10px;
+text-decoration: none;
+list-style-type: none;
+color: black;
+cursor: pointer;
+}
+nav ul li{
+    margin-right:20px;
+} 
+
+ 
+
+.first-bg{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/images/bg1.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.scroll-icon{
+    display: block;
+    font-size: 50px;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+}
+
+.second-bg{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/images/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.forms-container{
+    display: block;
+    justify-content: center;
+    width: 30%;
+    margin: 40px;
+}
+
+.form-container{
+    display: block;
+    border-top-color: #ff5722;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px;
+}
+.form-container2{
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: white;
+}
+.first-form{
+    text-align: start;
+    padding-left: 20px;
+    margin: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.form-border-top{
+    border-top-color: orange;
+}
+
+
+
+
+
+.first-form input{
+    width: 50%;
+    padding-top: 30px;
+    border:none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: grey;
+}
+.form-container h1{
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 25px;
+}
+.form-container p{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.required{
+    color: red;
+    margin-bottom: 12px;
+}
+.star{
+    color: red;
+}
+
+.submit{
+    display: block;
+    text-align: start;
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: white;
+    background: #ff5722 ;
+    font-size: 16px;
+}
+.submit-color{
+    background-color: orange;
+}
+
+.footer{
+    margin: 10px 0px;
+    text-align: center;
+}
+.footer p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media screen and (max-width:990px) {
+    .forms-container{
+        display: block;
+        justify-content: center;
+        width: 50%;
+        margin: 10px;
+    }
+    .form-container h1{
+        padding-top: 5px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 2px;
+    }
+    .form-container p{
+        padding-left: 8px;
+    }
+     
+      .checkbtn{
+        display: block;
+      }
+      nav{
+        padding: 0px 50px;
+      }
+      nav ul{
+        display: block;
+        width: 40%;
+        background-color: rgba(255, 161, 0, 1);
+        position: absolute;
+        top: 40px;
+        right: -100%;
+        text-align:center;
+        margin-right: 0;
+      }
+      nav ul li{
+        padding: 10px;
+      }
+      #check:checked ~ ul{
+        right: 0;
+      }
+} 
